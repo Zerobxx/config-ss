@@ -31,7 +31,7 @@ install_ss() {
     "server":"0.0.0.0",
     "server_port":5678,
     "local_port":1080,
-    "password":${PASSWROD},
+    "password":${PASSWORD},
     "timeout":120,
     "method":"chacha20-ietf-poly1305"
 }

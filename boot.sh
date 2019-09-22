@@ -16,7 +16,7 @@ function config_ssh(){
     
     # disable passowrd
     if grep '^PasswordAuthentication' /etc/ssh/sshd_config; then
-        sed -re 's/^(PasswordAuthentication)([[:space:]]+)yes/\1\2no/' -i.`date -I` /etc/ssh/sshd_config
+        sed -re 's/^(PasswordAuthentication)([[:space:]]+)yes/\1\2no/' -i.`date -I`.passowrd /etc/ssh/sshd_config
     else
         echo PasswordAuthentication no >> /etc/ssh/sshd_config
     fi

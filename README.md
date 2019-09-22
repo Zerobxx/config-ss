@@ -16,4 +16,6 @@ git pull  https://github.com/Zerobxx/config-ss && \
 
 cd ./config-ss && \
 
+echo PASSWORD='YourPassword' > ss.pass \
+
 bash boot.sh
