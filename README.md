@@ -11,11 +11,10 @@ Ubuntu18.04
 使用：
 
 cd /home && \
-
-git pull  https://github.com/Zerobxx/config-ss && \
-
+git clone  https://github.com/Zerobxx/config-ss && \
 cd ./config-ss && \
-
+cp 你的公钥 pub_key \
 echo PASSWORD='YourPassword' > ss.pass \
-
 bash boot.sh
+
+

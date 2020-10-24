@@ -34,9 +34,7 @@ function config_ssh(){
     fi
     
     cd ~/.ssh
-    echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCztBCQ0uJeccSApdta3q5hO0NICh0+DSYkIcRGV6qxB/2o/AAcn0vkWtJrsZXavC3J+Vj6DYuynqm1FOfcuqbk3gnjQrQkHmkH3gYTMmZFz1vi76sOtlW1+lWjk6is+DtPRuoPzjku1WYW6nGbwcK0at6kUsQvcKCzqv0+42xYscIsKzWmMSoDSfaCJrdVlQXnLXk4128mmjP80TnGror9lCMrAu9PTTznFixAw3I2ElrCsQW5a/y9qw2AyMvJtYh+ELjXIb3RNe1m81L9KhfFmpr09jNcvdL5Dvw1fwiPywE6A1svJaIVbSUyefmRlKDwfeAVVb8hiX7EjgPfRSQ/ frank@FrankdeMacBook-Pro.local >> authorized_keys
-    echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWiGprMMV8rQ4BEtwi23JGIDY8DyoW+ZkPPB0VZDCxLJWBWEky76pvB1jJN/j1+ZT6NFUj456aN24IhGFXfCt20HoqefEeaz8RyNwLYFh+VMj890Iek0+XztiIgq6Ah1p3+ll65WGa319UDB1P5i8vfq1ehgmY7GB2ysh4RL1qPzgvDdTZf0yYjsLrEbGoVaj0NA/HJwmw/lGEQe0TEeUofUh+KkLkxXk/xA6jmpCxCEq6zfDCENlZnsMRWiY+Qa1INIlJ72/M7JPsv8krcPtxcEDgOzVQBIxxwgzJLAsJ4S8yo/9fG6rJ4HWTn0F0fBGfJGL5KQM5I2NU5nMLa5T5 frank@FrankdeMacBook-Pro.local >> authorized_keys
-    echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbuBUBN+ruO4bSNMby4F3l8kT33rCr2KnjOT7k+UhjPBJqNSLIJL5EGNEWBeFAnVOZZ3ED0T/SeCerqdUr+CdM8GKQ3o+v6rC7ZS3KiSZSeGy2s8W04xiny/jnYoolzRo5uXQmj3gWOPPcoOVDhKR3ypOsFTVdTs9/EW0dw01Z2lHvf2XkFq7oa9Q4Ss5a5CoT9Qwtgh/CT3HoziFVrZ6ZBhDsTdnEQl3o8Yg2AO/LzPfNBRG603lqHN6MnARaYJIPLogknUDWvUId/A/dB/kWdgHNxHrkf77XgbLxg/J1QFgS5lHqZotGYhATV4fyX22lVEaYteO0qnONTsDTsuMb zerobxx@163.com >> authorized_keys
+    mv /home/config-ss/pub_key authorized_keys
     chmod 600 authorized_keys
     service sshd restart
     
